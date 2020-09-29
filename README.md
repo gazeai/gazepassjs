@@ -14,15 +14,41 @@ This library allows you to integrate [Gazepass](https://gazepass.com/) into your
 
     npm install --save gazepassjs
 
-## Sample Code
+## Sample Code (React)
+    import React from 'react';
+    import Gazepass from "gazepass";
+    
+    class YourComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            const API_KEY = "<insert API key>";
+            this.gazepass = new Gazepass(API_KEY);
+        }
 
-    const gazepass = require('gazepassjs');
-    const API_KEY = "<your API key here>";
+        async gazepassSignIn() {
+            var access_token = await this.gazepass.getAccessToken();
+            // Send access_token to your backend server
+        }
 
-    // Instantiate gazepass object with API_KEY
-    var gp = new gazepass.Gazepass(API_KEY);
+        render() {
+            return (
+                <>
+                    <button onClick={this.gazepassSignIn.bind(this)}>Passwordless Sign In</button>
+                </>
+            );
+        }
+    }
 
-    // Acquire access token from user
-    var access_token = gp.getAccessToken();
-
-    // Send access_token to your backend server
+## Sample Code (HTML/JS)
+    <script type="text/javascript" src="https://unpkg.com/gazepassjs@0.9.5/dist/gazepass.js"></script>
+    <script type="text/javascript">
+        async function gazepassSignIn() {
+            var API_KEY = "<insert API key>";
+            var gp = new gazepassjs.default(API_KEY);
+            var access_token = await gp.getAccessToken();
+            // Send this access token to your backend
+            // which then calls Gazepass API
+            // (see backend section)
+        }
+    </script>
+    <button onclick="gazepassSignIn()">Passwordless Sign In</button>
