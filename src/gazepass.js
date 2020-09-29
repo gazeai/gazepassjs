@@ -1,5 +1,5 @@
 
-export class Gazepass {
+export default class Gazepass {
     constructor(api_key) {
         this.api_key = api_key;
         this.gpBaseUrl = "https://passwordless.gazepass.com";

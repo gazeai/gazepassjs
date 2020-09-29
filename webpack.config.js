@@ -6,6 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'gazepass.js',
     library: 'gazepassjs',
-    libraryTarget: 'window'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
 };
