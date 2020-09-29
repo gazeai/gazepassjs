@@ -1,6 +1,6 @@
 {
   "name": "gazepassjs",
-  "version": "1.0.1",
+  "version": "0.9.0",
   "description": "Library to integrate Passwordless Authentication on any device by Gazepass.",
   "main": "dist/gazepass.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gaze Pte. Ltd.",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.44.2",
