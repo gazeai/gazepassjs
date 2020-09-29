@@ -8,6 +8,12 @@ This library allows you to integrate [Gazepass](https://gazepass.com/) into your
 2. You send that access token to you server/backend
 3. Your server/backend calls Gazepass API with your API key, API Secret Key and the acquired access token to get valdiated user account information (email, user ID, etc.)
 
+***Do not share your API secret key with anyone or expose it in your frontend/website code***
+
+## Installation
+
+    npm install --save gazepassjs
+
 ## Sample Code
 
     const gazepass = require('gazepassjs');
