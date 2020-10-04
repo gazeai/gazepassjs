@@ -16,7 +16,7 @@ This library allows you to integrate [Gazepass](https://gazepass.com/) into your
 
 ## Sample Code (React)
     import React from 'react';
-    import Gazepass from "gazepass";
+    import Gazepass from 'gazepassjs';
     
     class YourComponent extends React.Component {
         constructor(props) {
@@ -40,7 +40,7 @@ This library allows you to integrate [Gazepass](https://gazepass.com/) into your
     }
 
 ## Sample Code (HTML/JS)
-    <script type="text/javascript" src="https://unpkg.com/gazepassjs@0.9.5/dist/gazepass.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/gazepassjs@0.9.6/dist/gazepass.js"></script>
     <script type="text/javascript">
         async function gazepassSignIn() {
             var API_KEY = "<insert API key>";
