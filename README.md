@@ -44,7 +44,7 @@ This library allows you to integrate [Gazepass](https://gazepass.com/) into your
     <script type="text/javascript">
         async function gazepassSignIn() {
             var API_KEY = "<insert API key>";
-            var gp = new gazepassjs.default(API_KEY);
+            var gp = new Gazepass(API_KEY);
             var access_token = await gp.getAccessToken();
             // Send this access token to your backend
             // which then calls Gazepass API
