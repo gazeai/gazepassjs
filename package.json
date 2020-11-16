@@ -1,6 +1,6 @@
 {
   "name": "gazepassjs",
-  "version": "0.9.6",
+  "version": "0.10.0",
   "description": "Library to integrate Passwordless Authentication on any device by Gazepass.",
   "main": "dist/gazepass.js",
   "scripts": {
